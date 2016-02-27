@@ -41,8 +41,8 @@ class Structuring_Markup_Admin_Post {
 
 		/** Set Default Parameter for Array */
 		$options = array(
-			"id"       => "",
-			"type"     => "",
+			"id"       => "1",
+			"type"     => "local_business",
 			"activate" => "",
 			"output"   => array(),
 			"option"   => array()

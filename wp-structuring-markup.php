@@ -83,8 +83,6 @@ class Structuring_Markup {
 	 * @version 2.1.0
 	 */
 	function create_post_type_event () {
-		require_once( plugin_dir_path( __FILE__ ) . 'includes/wp-structuring-custom-post-event.php' );
-		new Structuring_Markup_Custom_Post_Event( $this->text_domain );
 	}
 
 	/**
@@ -177,8 +175,8 @@ class Structuring_Markup {
 	 * @version 1.3.0
 	 */
 	public function list_page_render () {
-		require_once( plugin_dir_path( __FILE__ ) . 'includes/wp-structuring-admin-list.php' );
-		new Structuring_Markup_Admin_List( $this->text_domain );
+		require_once( plugin_dir_path( __FILE__ ) . 'includes/wp-structuring-admin-post.php' );
+		new Structuring_Markup_Admin_Post( $this->text_domain );
 	}
 
 	/**
