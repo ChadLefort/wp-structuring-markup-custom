@@ -232,11 +232,11 @@ class Structuring_Markup_Type_LocalBusiness {
 		/** Postal Address */
 		$html  = '<table class="schema-admin-table">';
 		$html .= '<caption>Postal Address ( required )</caption>';
-		$html .= $this->set_form_text( 'street_address', 'Street Address', $option['street_address'], false );
-		$html .= $this->set_form_text( 'address_locality', 'Address Locality', $option['address_locality'], false );
-		$html .= $this->set_form_text( 'address_region', 'Address Region', $option['address_region'], false );
-		$html .= $this->set_form_text( 'postal_code', 'Postal Code', $option['postal_code'], false );
-		$html .= $this->set_form_text( 'address_country', 'Address Country', $option['address_country'], false, '<a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">The 2-letter ISO 3166-1 alpha-2 country code.</a>' );
+		$html .= $this->set_form_text( 'street_address', 'Street Address', $option['street_address'], true );
+		$html .= $this->set_form_text( 'address_locality', 'Address Locality', $option['address_locality'], true );
+		$html .= $this->set_form_text( 'address_region', 'Address Region', $option['address_region'], true );
+		$html .= $this->set_form_text( 'postal_code', 'Postal Code', $option['postal_code'], true );
+		$html .= $this->set_form_text( 'address_country', 'Address Country', $option['address_country'], true, '<a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_blank">The 2-letter ISO 3166-1 alpha-2 country code.</a>' );
 		$html .= '</table>';
 		echo $html;
 
